@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav's Modern Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Gaurav's</a>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="typing-animation">Welcome to <span class="highlight">Gaurav's</span> World</h1>
+            <p class="subtitle">Crafting innovative digital experiences with cutting-edge web technologies</p>
+            <button class="cta-btn" onclick="scrollToSection('about')">
+                <span>Explore More</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/500x400/1e1f2f/ccc?text=About+Me" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>We are a passionate team of developers and designers dedicated to transforming ideas into stunning
+                    digital
+                    realities. With a focus on innovation and user-centric design, we build websites that not only look
+                    exceptional but also perform flawlessly across all platforms.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+                <button class="cta-btn secondary" onclick="scrollToSection('services')">Discover Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card glassmorphism">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Full-stack solutions using React, Node.js, and more to create dynamic, scalable web applications.</p>
+                <div class="card-link">
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card glassmorphism">
+                <div class="card-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Apps</h3>
+                <p>Cross-platform mobile experiences with Flutter and React Native for seamless iOS and Android
+                    deployment.</p>
+                <div class="card-link">
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card glassmorphism">
+                <div class="card-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Intuitive designs powered by Figma and Adobe XD, ensuring pixel-perfect interfaces that captivate
+                    users.</p>
+                <div class="card-link">
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Featured Works</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="./src/project_7.png" alt="Project 1">
+                <div class="overlay">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Modern online store with integrated payment gateway.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/500x300/ff5722/fff?text=Project+2" alt="Project 2">
+                <div class="overlay">
+                    <h3>Mobile Fitness App</h3>
+                    <p>Track workouts and nutrition with AI insights.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/500x300/ffc107/000?text=Project+3" alt="Project 3">
+                <div class="overlay">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Data visualization tool for business intelligence.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/500x300/1e1f2f/ccc?text=Project+4" alt="Project 4">
+                <div class="overlay">
+                    <h3>Portfolio Site</h3>
+                    <p>Personal showcase with interactive elements.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info glassmorphism">
+                <h3>Let's Collaborate</h3>
+                <p>Ready to bring your vision to life? Drop us a line and we'll respond within 24 hours.</p>
+                <div class="contact-details">
+                    <div class="detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@gauravs.com</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form glassmorphism">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Gaurav's Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Smooth scroll to section
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Typing animation
+        const text = "Welcome to Gaurav's World";
+        const typingElement = document.querySelector('.typing-animation');
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typingElement.textContent = text.slice(0, i + 1);
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                typingElement.innerHTML = text.replace("Gaurav's", '<span class="highlight">Gaurav\'s</span>');
+            }
+        }
+        window.addEventListener('load', typeWriter);
+
+        // Back to top visibility
+        window.addEventListener('scroll', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+            }
+        });
+
+        // Portfolio modal (simple alert for demo)
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Project details would open in a modal here!');
+            });
+        });
+
+        // Form submission (demo)
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
+
+</body>
+
+</html>
